@@ -13,6 +13,18 @@ html {
 
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
+  margin-left: 20px;
+  margin-top: 20px;
+  color: green;
+  font-family: 'Unica One', cursive;
+  background: url("images/boba.jpg") no-repeat;
+  background-size: 600px 300px;
+  background-position: center;
+  opacity: 0.80;
+}
+
+li::marker {
+  color: green;
 }
 
 .container {

@@ -1,11 +1,20 @@
 from pathlib import Path
 
 # GENERAL
+
+import environ
+
+env = environ.Env(
+  DEBUG=(bool, False)
+)
+
+environ.Env.read_env()
+
 # ------------------------------------------------------------------------------
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-SECRET_KEY
-SECRET_KEY = '43)%4yx)aa@a=+_c(fn&kf3g29xax+=+a&key9i=!98zyim=8j'
+SECRET_KEY = env.str('SECRET_KEY')
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 DEBUG = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
@@ -33,6 +42,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+    'boba',
 ]
 
 # MIDDLEWARE
