@@ -106,43 +106,31 @@ Give a ⭐️  if this project helped you!
 [The MIT License](LICENSE)
 
 
-<!-- ## Docker Usage
-```
-# Build the Docker Image
-$ docker-compose build
 
-# Run Migrations
-$ docker-compose run --rm web python manage.py migrate
 
-# Create a Superuser
-$ docker-compose run --rm web python manage.py createsuperuser
 
-# Run Django on http://localhost:8000/
-$ docker-compose up
+# DjangoX
 
-# Run Django in background mode
-$ docker-compose up -d
+PR Link: 
 
-# Stop all running containers
-$ docker-compose down
+**Author**: Grace Choi
+**Version**: 1.0.0
 
-# Run Tests
-$ docker-compose run --rm web pytest
+## Overview
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's your problem domain?) -->
 
-# Re-build PIP requirements
-$ docker-compose run --rm web pip-compile requirements/requirements.in
-```-->
+## Getting Started
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
-<!-- ## Next Steps
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. This is also an area which you can include any visuals; flow charts, example usage gifs, screen captures, etc.-->
 
-- Use [PostgreSQL locally via Docker](https://wsvincent.com/django-docker-postgresql/)
-- Use [django-environ](https://github.com/joke2k/django-environ) for environment variables
-- Update [EMAIL_BACKEND](https://docs.djangoproject.com/en/3.0/topics/email/#module-django.core.mail) to configure an SMTP backend
-- Make the [admin more secure](https://opensource.com/article/18/1/10-tips-making-django-admin-more-secure)
+## API
+<!-- Provide detailed instructions for your applications usage. This should include any methods or endpoints available to the user/client/developer. Each section should be formatted to provide clear syntax for usage, example calls including input data requirements and options, and example responses or return values. -->
 
-## Adding Social Authentication
+## Change Log
+03-09-2021 9:30pm - Finished lab
+03-10-2021 - Added more styling and Github Authentication
 
-- [Configuring Google](https://wsvincent.com/django-allauth-tutorial-custom-user-model/#google-credentials)
-- [Configuring Facebook](http://www.sarahhagstrom.com/2013/09/the-missing-django-allauth-tutorial/#Create_and_configure_a_Facebook_app)
-- [Configuring Github](https://wsvincent.com/django-allauth-tutorial/)
-- `django-allauth` supports [many, many other providers in the official docs](https://django-allauth.readthedocs.io/en/latest/providers.html) -->
+### Github Authentication:
+https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html
