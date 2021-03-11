@@ -1,6 +1,6 @@
 # DjangoX
 
-PR Link: 
+PR Link: https://github.com/gracerosemary/boba-project/pull/1  
 
 **Author**: Grace Choi
 **Version**: 1.0.0
