@@ -1,0 +1,11 @@
+{% extends 'boba/base.html' %}
+{% block content %}
+
+<h2>Details about {{ boba.drink }}</h2>
+<h4>Business: {{ boba.business }}</h4>
+<h4>Purchaser: {{ boba.purchaser }}</h4>
+<p>{{ boba.description }}</p>
+<a href="{% url 'boba_update' boba.pk %}">+ Update Boba</a>
+<a href="{% url 'boba_delete' boba.pk %}">+ Delete Boba</a>
+
+{% endblock content %}

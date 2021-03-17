@@ -1,0 +1,12 @@
+{% extends 'boba/base.html' %}
+{% block content %}
+
+<h1>Update Boba</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="UPDATE">
+</form>
+
+{% endblock content %}

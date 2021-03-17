@@ -1,0 +1,14 @@
+{% extends 'boba/base.html' %}
+{% block content %}
+
+<h1>Boba Tea</h1>
+<a href="{% url 'boba_create' %}">+New Boba</a>
+<ul>
+  {% for boba in object_list %}
+    <li>
+      <a href="{% url 'boba_detail' boba.pk %}">{{ boba.drink }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
